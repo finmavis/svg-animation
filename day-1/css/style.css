@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4B4453;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ball {
+  animation-name: animation-name;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  /**
+  * or you can using shorthand animation property
+  */
+   /* animation: animation-name 3s infinite forwards; */
+  
+}
+
+@keyframes animation-name {
+  0% {
+    fill: #00C9A5;
+    transform: translateX(0);
+  }
+  50% {
+    fill: #41BAFF; 
+    transform: translateX(250px);
+  }
+  100% {
+    fill: #00C9A5;
+    transform: translateX(0);
+  }
+}
+
+.box {
+  animation: rotate 2s infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
