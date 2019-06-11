@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4B4453;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  width: 350px;
+}
+
+.front-wheel {
+  stroke-dasharray: 246.651;
+  stroke-dashoffset: 246.651;
+  animation: draw 1s forwards;
+}
+
+.front-rim {
+  stroke-dasharray: 45.9506; 
+  stroke-dashoffset: 45.9506;
+  animation: draw 1s forwards;
+}
+
+.back-wheel {
+  stroke-dasharray: 246.653; 
+  stroke-dashoffset: 246.653;
+  animation: draw 1s 0.5s forwards;
+}
+
+.back-fender {
+  stroke-dasharray: 61.5599; 
+  stroke-dashoffset: 61.5599;
+  animation: draw 1s 0.5s forwards;
+}
+
+.front-hub {
+  stroke-dasharray: 41.0486; 
+  stroke-dashoffset: 41.0486;
+  animation: draw 1s 0.8s forwards;
+}
+
+.back-hub {
+  stroke-dasharray: 41.0493; 
+  stroke-dashoffset: 41.0493;
+  animation: draw 1s 0.8s forwards;
+}
+
+.front-fork {
+  stroke-dasharray: 58.1384; 
+  stroke-dashoffset: 58.1384;
+  animation: draw 0.8s 1.5s forwards;
+}
+
+.chain-stay {
+  stroke-dasharray: 50; 
+  stroke-dashoffset: 50;
+  animation: draw 0.8s 1.7s forwards;
+}
+
+.seat-stay {
+  stroke-dasharray: 53.6447; 
+  stroke-dashoffset: 53.6447;
+  animation: draw 0.8s 1.8s forwards;
+}
+
+.top-tube {
+  stroke-dasharray: 76.852; 
+  stroke-dashoffset: 76.852;
+  animation: draw 0.8s 1.9s forwards;
+}
+
+.down-tube {
+  stroke-dasharray: 53.1777; 
+  stroke-dashoffset: 53.1777;
+  animation: draw 0.8s 2s forwards;
+}
+
+.back-fork {
+  stroke-dasharray: 50.511; 
+  stroke-dashoffset: 50.511;
+  animation: draw 0.8s 2.1s forwards;
+}
+
+.seat-post {
+  stroke-dasharray: 11; 
+  stroke-dashoffset: 11;
+  animation: draw 0.8s 2.2s forwards;
+}
+
+.handlebar {
+  stroke-dasharray: 25.1876; 
+  stroke-dashoffset: 25.1876;
+  animation: draw 0.8s 2.3s forwards;
+}
+
+.chain {
+  stroke-dasharray: 40.4294; 
+  stroke-dashoffset: 40.4294;
+  animation: draw 0.8s 2.4s forwards;
+}
+
+.crank-arm {
+  stroke-dasharray: 11.4217; 
+  stroke-dashoffset: 11.4217;
+  animation: draw 0.8s 2.5s forwards;
+}
+
+.pedal {
+  stroke-dasharray: 11.1803; 
+  stroke-dashoffset: 11.1803;
+  animation: draw 0.8s 2.6s forwards;
+}
+
+.seat {
+  stroke-dasharray: 18; 
+  stroke-dashoffset: 18;
+  animation: draw 0.8s 2.7s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
